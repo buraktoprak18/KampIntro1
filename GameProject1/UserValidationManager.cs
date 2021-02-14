@@ -8,8 +8,8 @@ namespace GameProject1
     {
         public bool Validate(Gamer gamer)
         {
-            if (gamer.BirthYear == 1985 && gamer.FirstName == "BURAK"&& gamer.LastName=="TOPRAK"&& gamer.IdentityNumber == 12345)
-            {
+            if (gamer.Id==1 && gamer.BirthYear == 2001 && gamer.FirstName == "BURAK"&& gamer.LastName=="TOPRAK"&& gamer.IdentityNumber == 12345)
+             {
                 return true;
             }
                else

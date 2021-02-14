@@ -12,18 +12,18 @@ namespace GameProject1
         IUserValidationService _userValidationService;
         public GamerManager(IUserValidationService userValidationService)
         {
-            _userValidationService = _userValidationService;
+            _userValidationService = userValidationService;
         }
 
         public void add(Gamer gamer)
         {
             if (_userValidationService.Validate(gamer) == true)
             {
-                Console.WriteLine("Kayıt Oldu");
+                Console.WriteLine("Doğrulanamadı Kayıt Gerçekleştirilemedi");
             }
             else
             {
-                Console.WriteLine("Doğrulanamadı Kayıt Gerçekleştirilemedi");
+                Console.WriteLine("Kayıt Oldu");
             }
         }
 
